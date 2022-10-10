@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+
+    <form method="post">
+        <fieldset>
+
+            <legend>Dados Pessoais</legend>
+
+                <label>Nome:</label>
+                <input type="text" name="nome" placeholder="Digite seu nome aqui">
+                <br><br>
+                <label>Data de Nascimento:</label>
+                <input type="date">
+                <br><br>
+                <label>E-mail:</label>
+                <input type="email" name="email" placeholder="E-mail">
+                <br><br>
+                <label>Telefone:</label>
+                <input type="text" name="telefone" placeholder="Digite seu telefone aqui">
+                <br><br>
+
+        </fieldset>
+        
+    </form>
+
+    <form method="post">
+        <fieldset>
+            <legend>Dados Acadêmicos</legend>
+
+            <label>Curso:</label>
+            <select>
+                <option value="SI">SI</option>
+                <option value="GTI">GTI</option>
+                <option value="ADS">ADS</option>
+            </select>
+            <br><br>
+            <label>Semestre:</label>
+                <input type="radio" name="sexo" value="1">1º
+                <input type="radio" name="sexo" value="2">2°
+                <input type="radio" name="sexo" value="3">3º
+                <input type="radio" name="sexo" value="4">4°
+                <input type="radio" name="sexo" value="5">5º
+                <br><br>
+        </fieldset>
+    </form>
+
+    <form method="post">
+        <fieldset>
+
+            <label>Trabalha?</label>
+            <input type="checkbox" name="trabalha" value="1">
+            <br><br>
+            <label>Local de trabalho:</label>
+            <input type="text">
+            <br><br>
+            <label>Descreva sua experiência:</label>
+            <br>
+            <textarea name="message" rows="10" cols="60"></textarea>
+
+        </fieldset>
+    </form>
+
+
+    <input type="submit" name="submit" value="Gravar">
+    <input type="reset" name="reset" value="Limpar">
+
+    
+</body>
+</html>
